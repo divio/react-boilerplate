@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(path.resolve(__dirname, '..', 'build')));
+app.use(express.static(path.resolve(__dirname, '..', 'build'), {index: null}));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('*', (req, res) => {
