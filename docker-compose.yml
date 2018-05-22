@@ -3,5 +3,5 @@ web:
   volumes:
     - ".:/app:rw"
   ports:
-    - "8000:80"
+    - "8088:80"
   command: npm start
