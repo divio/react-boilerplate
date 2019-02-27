@@ -1,23 +1,20 @@
 FROM node:10.15.1
 
-COPY package.json .
+COPY . /app
+WORKDIR /app
+
 RUN npm install
 
-COPY . /app
+# noop files for non python projects and local development
+RUN echo "#!/bin/bash" > /app/migrate.sh && chmod +x /app/migrate.sh
+RUN echo "#!/bin/bash" > /usr/local/bin/start && chmod +x /usr/local/bin/start
 
-# noop for legacy migration
-RUN echo "#!/bin/bash" > /app/migrate.sh && \
-    chmod +x /app/migrate.sh
-
-
-WORKDIR /app
 ENV PATH=/node_modules/.bin:$PATH
-RUN npm run build
-
 ENV PORT=80
 ENV HOST=0.0.0.0
 ENV BROWSER='none'
 
-EXPOSE 80
+RUN npm run build
 
+EXPOSE 80
 CMD npm run start:server

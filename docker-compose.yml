@@ -1,7 +1,9 @@
-web:
-  build: .
-  volumes:
-    - ".:/app:rw"
-  ports:
-    - "8088:80"
-  command: npm start
+version: "3"
+
+services:
+  web:
+    build: .
+    ports:
+     - "8000:80"
+    volumes:
+      - ".:/app:rw"

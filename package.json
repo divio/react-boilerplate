@@ -1,8 +1,6 @@
 {
   "name": "divio-react-boilerplate",
-  "version": "16.8.2",
-  "description": "React boilerplate based on Create React App",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -10,14 +8,6 @@
     "eject": "react-scripts eject",
     "start:server": "node server"
   },
-  "keywords": [
-    "divio",
-    "cloud",
-    "boilerplate",
-    "react"
-  ],
-  "author": "",
-  "license": "BSD-3-Clause",
   "devDependencies": {
     "react-scripts": "^2.1.3"
   },
