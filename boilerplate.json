@@ -2,7 +2,7 @@
     "package-name": "react-boilerplate",
     "templates": [],
     "identifier": "node",
-    "version": "16.8.2.1",
+    "version": "16.8.4",
     "excluded": [
         "node_modules",
         "build",

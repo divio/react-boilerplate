@@ -9,12 +9,12 @@
     "start:server": "node server"
   },
   "devDependencies": {
-    "react-scripts": "^2.1.3"
+    "react-scripts": "^2.1.8"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-router-dom": "^4.3.1"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^5.0.0"
   }
 }

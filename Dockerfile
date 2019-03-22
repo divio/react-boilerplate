@@ -1,4 +1,4 @@
-FROM node:10.15.1
+FROM node:10.15.3
 
 COPY . /app
 WORKDIR /app
@@ -17,4 +17,5 @@ ENV BROWSER='none'
 RUN npm run build
 
 EXPOSE 80
-CMD npm run start:server
+
+CMD ["npm", "run", "start:server"]
