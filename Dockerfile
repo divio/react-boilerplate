@@ -1,7 +1,7 @@
 FROM node:10.16.0
 
 # for caching optimisations
-COPY package*.json .
+COPY package*.json /
 RUN npm install
 
 COPY . /app
@@ -20,4 +20,4 @@ RUN npm run build
 
 EXPOSE 80
 
-CMD ["npm", "run", "start:server"]
+CMD ["npm", "run", "start"]
