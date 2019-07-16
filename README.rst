@@ -4,6 +4,9 @@ React Boilerplate
 
 `Divio Cloud <http://www.divio.com/>`_ based boilerplate to develop with React.
 
+The sample project was created using the
+`Create React App <https://facebook.github.io/create-react-app/docs/getting-started>`_.
+
 Up to date with `React <https://reactjs.org//>`_ **16.8.6** and Node **10.16.0**.
 
 Local development

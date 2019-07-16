@@ -1,8 +1,10 @@
 FROM node:10.16.0
 
 # for caching optimisations
-COPY package*.json .
+COPY package*.json /
 RUN npm install
+# required to serve the react app on the live server
+RUN npm install -g serve
 
 COPY . /app
 WORKDIR /app
@@ -20,4 +22,4 @@ RUN npm run build
 
 EXPOSE 80
 
-CMD ["npm", "run", "start:server"]
+CMD ["serve", "-s", "build", "-l", "80"]
