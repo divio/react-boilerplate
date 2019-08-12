@@ -7,7 +7,7 @@ React Boilerplate
 The sample project was created using the
 `Create React App <https://facebook.github.io/create-react-app/docs/getting-started>`_.
 
-Up to date with `React <https://reactjs.org//>`_ **16.8.6** and Node **10.16.1**.
+Up to date with `React <https://reactjs.org//>`_ **16.8.6** and Node **10.16.2**.
 
 Local development
 =================
