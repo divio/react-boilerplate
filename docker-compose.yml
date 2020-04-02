@@ -18,6 +18,8 @@ services:
      - "8000:80"
     volumes:
       - ".:/app:rw"
+    # There is currently a bug: https://github.com/facebook/create-react-app/issues/8688#issuecomment-602149917
+    tty: true
     # The default command that the container starts with. If you'd like to run
     # the project locally in Live configuration, you will need to change this.
     # See https://docs.divio.com/en/latest/how-to/local-in-live-mode
